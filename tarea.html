@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rellena tu CV</title>
+<link rel="stylesheet" href="css/tarea.css"/>
+</head>
+
+<body>
+<div class="contenedor">
+
+<h3>Rellena tu CV</h3>
+
+<form action="tarea.html" method="post" enctype="multipart/form-data">
+  <label for="dni">DNI</label><br/>
+  <input type="text" required id="dni" size="8" maxlength="8" value=""/><br/>
+  <label for="nombre">Nombres:</label><br/>
+  <input type="text" name="nombre" value="" size="20" maxlength="30" /> <br/>
+  <label for="apellido">Apellidos:</label><br/>
+  <input type="text" name="apellido" value="" size="50" maxlength="80" />
+  <br/>
+  <label for="contrasena">Contraseña:</label><br/>
+  <input type="password" name="contrasena" value="" maxlength="10" />
+  <br/>
+  <label for="contrasena1">Repetir Contraseña:</label><br/>
+  <input type="password" name="contrasena1" value="" maxlength="10" />
+<br/>
+  <label for="nacimiento">Fecha de Nacimiento:</label><br/>
+<input type="date" id="nacimiento" name="fnacimiento"><br/>
+  <label for="sexo">Sexo:</label><br/>
+<input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+<input type="radio" name="sexo" value="mujer" /> Mujer
+
+<br/><br/>
+<label for="foto1">Sube tu foto:</label><br/>
+<input type="file" id="foto1" name="foto" />
+
+<br/><br/>
+
+<input name="suscribir" type="checkbox" value="musica" />Me gusta la música
+<input name="suscribir" type="checkbox" value="viaje" /> Me gusta viajar
+<input name="suscribir" type="checkbox" value="cine" /> Me gusta ir al cine
+<br/><br/>
+
+<input type="submit" name="enviar" value="Guardar cambios" />
+<input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+<label for=""></label>
+</form>
+
+</div>
+</body>
+
+</html>
